@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+   
+   
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color:  hsl(185, 75%, 39%);
+    color: #505458;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.container::before {
+    content: url(./images/bg-pattern-top.svg);
+    transform: translate(-57%, 18%);
+    
+}
+.container::after {
+    content: url(./images/bg-pattern-bottom.svg);
+    transform: translate(50%, -5%);
+   
+}
+
+ h2, h2 span {
+    font-size:1.4rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+
+.bg-pattern-card {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    z-index: 0;
+    width:100%;
+
+
+}
+.image-victor {
+    top:90px;
+    position: relative;
+    border-radius:50%;
+    border: 5px solid #ffffff;
+    outline: none;
+    z-index: 2;
+
+}
+    
+.card {
+   position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 390px;
+    z-index: 1;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+}
+.profil {
+    margin-top: 90px;
+    text-align: center;
+}
+
+
+.profil h2 span {
+    margin-left: 10px;
+    color: rgb(186, 197, 201);
+}
+
+.city {
+    color: rgb(186, 197, 201);
+} 
+
+.stats h3, .stats p {
+    margin:0;
+  
+}
+.stats p small {
+    color:rgb(186, 197, 201)
+  
+}
+
+.stats {
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+
+.folowers {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.likes {
+    grid-column: 2 /3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.photos {
+    grid-column: 3 /4;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.stats h3 {
+    justify-self: center;  
+}
+      
+hr {
+    width: 100%;
+}
+
+.attribution {
+    position: absolute;
+    flex-direction: column;
+    align-self: center;
+    bottom: 25px;
+    font-size: 11px;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+
+}
+
